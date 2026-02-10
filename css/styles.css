@@ -21,3 +21,25 @@ main {
     justify-content: space-between;
     width: 50%;
 }
+
+.addremove button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+    color: white;
+    font-weight: 500;
+}
+
+.addremove button:hover {
+    transform: scale(1.1);
+}
+
+#addbtn {
+    background-color: green;
+}
+
+#rmbtn {
+    background-color: red;
+}
