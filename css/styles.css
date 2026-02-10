@@ -1,0 +1,23 @@
+body {
+    background-color: #ffffce;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title {
+    background-color: #b0f4ff;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.addremove {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
