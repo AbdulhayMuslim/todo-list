@@ -19,8 +19,8 @@ main {
 .addremove {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 50%;
+    justify-content: center;
+    width: 100%;
 }
 
 .addremove button {
@@ -31,18 +31,15 @@ main {
     transition: 0.3s ease;
     color: white;
     font-weight: 500;
+    flex: 1;
 }
 
 .addremove button:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 #addbtn {
     background-color: green;
-}
-
-#rmbtn {
-    background-color: red;
 }
 
 .notes {
@@ -60,10 +57,21 @@ main {
     background-color: #fbf3e7;
     overflow: hidden;
     display: flex;
+    flex-direction: column;
     border: 1px solid #d4d4d4;
 }
 
 .note p {
     min-width: 0;
     overflow-wrap: break-word;
+}
+
+.trashbox {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fa-trash {
+    color: red;
+    display: hidden;
 }
