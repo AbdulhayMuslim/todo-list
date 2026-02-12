@@ -57,9 +57,10 @@ main {
 .note {
     padding: 1rem;
     border-radius: 10px;
-    background-color: #ede5da;
+    background-color: #fbf3e7;
     overflow: hidden;
     display: flex;
+    border: 1px solid #d4d4d4;
 }
 
 .note p {
