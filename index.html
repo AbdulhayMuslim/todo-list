@@ -1,23 +1,30 @@
-<!-- Add Note button -->
-<button id="addNoteBtn">Add Note</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+    <main>
+        <h1 id="title">Todo List</h1>
+        <div class="addremove">
+            <button id="addbtn"><i class="fa-solid fa-plus"></i> Add Note</button>
+        </div>
 
-<!-- Notes container (wrap your existing notes here if you have any) -->
-<div class="notes" id="notesContainer">
-  <!-- existing .note elements can stay inside this -->
-</div>
-
-<!-- Add Note Popup -->
-<div id="noteModal" class="modal">
-  <div class="modal-content">
-    <span id="closeModal" class="close">&times;</span>
-    <h2>Add Note</h2>
-    <textarea id="noteText" placeholder="Write your note..."></textarea>
-    <button id="saveNoteBtn">Save</button>
-  </div>
-</div>
-
-<!-- Font Awesome (if not already added) -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-<!-- Your script (keep this last) -->
-<script src="js/script.js"></script>
+        <div class="notes">
+            <div class="note">
+                <p>
+                    this is a note...
+                </p>
+                <div class="trashbox">
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
