@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #ffffce;
 }
@@ -73,5 +77,4 @@ main {
 
 .fa-trash {
     color: red;
-    display: hidden;
 }
