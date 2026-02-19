@@ -13,12 +13,10 @@ const rmBtn = document.getElementById('rmbtn');
 
 // console.log(notes);
 
+const notebox = document.querySelector('.note')
+
 addBtn.addEventListener("click", () => {
-    addBtn.textContent = 'Button Clicked';
-})
-
-const title = document.querySelector('#title');
-
-title.addEventListener("hover", () => {
-    title.textContent = 'A JavaScript Exercise Project';
+    let newmsg= document.createElement('p');
+    newmsg.textContent = 'Welcome to my page';
+    notebox.appendChild(newmsg);
 })
