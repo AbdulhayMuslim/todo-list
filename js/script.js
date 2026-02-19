@@ -1,22 +1,15 @@
 const addBtn = document.getElementById("addbtn");
 const rmBtn = document.getElementById('rmbtn');
 
-// var notes = [''];
-
-// addBtn.addEventListener('click', addnote);
-
-// function addnote() {
-//     let newN = prompt('Write your note:');
-
-//     newN.push(notes);
-// };
-
-// console.log(notes);
-
 const notebox = document.querySelector('.note')
+const noteboxparent = document.querySelector('.notes')
 
 addBtn.addEventListener("click", () => {
+    let newnotebox = document.createElement('div')
+    newnotebox.className = 'note'
     let newmsg= document.createElement('p');
-    newmsg.textContent = 'Welcome to my page';
-    notebox.appendChild(newmsg);
+    let userNote = prompt('Enter your note:');
+    newmsg.textContent = userNote;
+    noteboxparent.appendChild(newnotebox);
+    newnotebox.appendChild(newmsg)
 })
