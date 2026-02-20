@@ -18,8 +18,10 @@ addBtn.addEventListener("click", () => {
     noteBox.appendChild(newNote)
     noteBox.appendChild(trash)
 
-    trash.addEventListener('click', () =>{
-        noteBox.remove();
-    })
-
 });
+
+notes.addEventListener('click', (e) =>{
+    if (e.target.classList.contains('fa-trash')){
+        e.target.parentElement.remove();
+    }
+})
