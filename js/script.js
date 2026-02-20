@@ -1,15 +1,20 @@
-const addBtn = document.getElementById("addbtn");
-const rmBtn = document.getElementById('rmbtn');
-
-const notebox = document.querySelector('.note')
-const noteboxparent = document.querySelector('.notes')
+const addBtn = document.querySelector("#addbtn");
+const notes = document.querySelector('.notes')
 
 addBtn.addEventListener("click", () => {
-    let newnotebox = document.createElement('div')
-    newnotebox.className = 'note'
-    let newmsg= document.createElement('p');
-    let userNote = prompt('Enter your note:');
-    newmsg.textContent = userNote;
-    noteboxparent.appendChild(newnotebox);
-    newnotebox.appendChild(newmsg)
-})
+
+    let noteBox = document.createElement('div')
+    noteBox.className = 'note'
+
+    let trash = document.createElement('i')
+    trash.className = 'fa-solid fa-trash'
+
+    let userInput = prompt('Enter your note:');
+    
+    let newNote= document.createElement('p');
+    newNote.textContent = userInput;
+
+    notes.appendChild(noteBox);
+    noteBox.appendChild(newNote)
+    noteBox.appendChild(trash)
+});
