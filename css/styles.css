@@ -85,3 +85,7 @@ main {
     visibility: visible;
     pointer-events: auto;
 }
+
+.fa-trash:hover {
+    color: orange;
+}

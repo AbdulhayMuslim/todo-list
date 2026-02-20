@@ -17,4 +17,9 @@ addBtn.addEventListener("click", () => {
     notes.appendChild(noteBox);
     noteBox.appendChild(newNote)
     noteBox.appendChild(trash)
+
+    trash.addEventListener('click', () =>{
+        noteBox.remove();
+    })
+
 });
