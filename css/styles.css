@@ -90,3 +90,35 @@ main {
 .fa-trash:hover {
     color: orange;
 }
+
+@media (max-width: 768px) {
+    main {
+        gap: 0.5rem;
+    }
+
+    .notes {
+        gap: 0.5rem;
+        padding: 0.2rem;
+    }
+
+    .note {
+        max-width: 45%;
+        padding: 0.3rem;
+    }
+
+    #title {
+        font-size: 1.5rem;
+    }
+
+    .fa-trash {
+        opacity: 1;
+        visibility: visible;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #addbtn {
+        font-size: 1rem;
+    }
+}
