@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #ffffce;
+    background-color: #131b20;
 }
 
 main {
@@ -37,7 +37,7 @@ main {
     color: white;
     font-weight: 500;
     flex: 1;
-    background-color: green;
+    background-color: #aea60b;
 }
 
 .addbox button:hover {
@@ -55,11 +55,11 @@ main {
 .note {
     padding: 1rem;
     border-radius: 10px;
-    background-color: #fbf3e7;
+    background-color: #131b20;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    border: 1px solid #d4d4d4;
+    border: 1px solid #4d4d4d;
     max-width: 30%;
     justify-content: space-between;
     gap: 1rem;
@@ -68,6 +68,7 @@ main {
 .note p {
     min-width: 0;
     overflow-wrap: break-word;
+    color: grey;
 }
 
 .fa-trash {
