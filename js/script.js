@@ -9,7 +9,9 @@ addBtn.addEventListener("click", () => {
     let trash = document.createElement('i')
     trash.className = 'fa-solid fa-trash'
 
-    let userInput = prompt('Enter your note:');
+    let userInput = document.createElement('input')
+    userInput.type = 'text'
+    userInput.placeholder = 'Enter your note';
 
     if (userInput === null || userInput.trim() === '') return;
     
