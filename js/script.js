@@ -9,14 +9,12 @@ addBtn.addEventListener("click", () => {
     let trash = document.createElement('i')
     trash.className = 'fa-solid fa-trash'
 
-    let userInput = prompt('Enter your note:');
-
-    
+    let userInput = prompt('Enter your note:')
 
     if (userInput === null || userInput.trim() === '') return;
     
-    let newNote= document.createElement('p');
-    newNote.textContent = userInput;
+    let newNote= document.createElement('p')
+    newNote.textContent = userInput
 
     notes.appendChild(noteBox);
     noteBox.appendChild(newNote)
