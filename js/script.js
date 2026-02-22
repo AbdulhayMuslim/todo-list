@@ -11,6 +11,8 @@ addBtn.addEventListener("click", () => {
 
     let userInput = prompt('Enter your note:');
 
+    
+
     if (userInput === null || userInput.trim() === '') return;
     
     let newNote= document.createElement('p');
