@@ -9,8 +9,8 @@ addBtn.addEventListener("click", () => {
     let trash = document.createElement('i')
     trash.className = 'fa-solid fa-trash'
 
-    let userInput = document.createElement('input')
-    userInput.type = 'text'
+    let userInput = document.createElement('input').className = 'userInput';
+    userInput.type = 'textarea';
     userInput.placeholder = 'Enter your note';
 
     if (userInput === null || userInput.trim() === '') return;
